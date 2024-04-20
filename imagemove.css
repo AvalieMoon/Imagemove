@@ -1,0 +1,17 @@
+#container {
+    position: relative;
+    width: 400px;
+    height: 300px;
+    overflow: hidden;
+  }
+  #image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: moveImage 5s linear infinite;
+  }
+ @keyframes moveImage {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(300px); }
+    100% { transform: translateX(0); }
+ }
